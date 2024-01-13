@@ -3105,6 +3105,86 @@
       <Polish>Pozycja modułu ma znaczenie. Moduł przyciąga się do najbliższej lokacji, która następnie będzie edytowana.</Polish>
     </Key>
   </Package>
+  <Package name="Modules_setAnimation">
+    <Key ID="STR_A4ES_Modules_setAnimation_displayName">
+      <Polish>Ambientowe Animacje</Polish>
+    </Key>
+    <Key ID="STR_A4ES_Modules_setAnimation_Attributes_mode">
+      <Polish>Tryb wyboru animacji</Polish>
+    </Key>
+    <Key ID="STR_A4ES_Modules_setAnimation_Attributes_mode_Tooltip">
+      <Polish>Pochodzenie definiuje kolor skóry jednostek graczy</Polish>
+    </Key>
+    <Key ID="STR_A4ES_Modules_setAnimation_Attributes_mode_predefined">
+      <Polish>Predefiniowany</Polish>
+    </Key>
+    <Key ID="STR_A4ES_Modules_setAnimation_Attributes_mode_custom">
+      <Polish>Własne Animacje</Polish>
+    </Key>
+    <Key ID="STR_A4ES_Modules_setAnimation_Attributes_mode_predefined_desc">
+      <Polish>Azjatyckie</Polish>
+    </Key>
+    <Key ID="STR_A4ES_Modules_setAnimation_Attributes_mode_custom_desc">
+      <Polish>Arabskie</Polish>
+    </Key>
+    <Key ID="STR_A4ES_Modules_setAnimation_Attributes_predefinedAnim">
+      <Polish>Predefiniowane</Polish>
+    </Key>
+    <Key ID="STR_A4ES_Modules_setAnimation_Attributes_predefinedAnim_Tooltip">
+      <Polish>Moduł pozwala na wybranie koloru twarzy jednostek graczy. Zostaną zmienione twarze wszystkich graczy, także tych, którzy dołączą w trakcie rozgrywki.</Polish>
+    </Key>
+    <Key ID="STR_A4ES_Modules_setAnimation_Attributes_customAnim">
+      <Polish>Własne</Polish>
+    </Key>
+    <Key ID="STR_A4ES_Modules_setAnimation_Attributes_customAnim_Tooltip">
+      <Polish>Arabskie</Polish>
+    </Key>
+    <Key ID="STR_A4ES_Modules_setAnimation_Attributes_loopAnimation">
+      <Polish>Zapętl</Polish>
+    </Key>
+    <Key ID="STR_A4ES_Modules_setAnimation_Attributes_loopCondition">
+      <Polish>Warunek zapętlenia</Polish>
+    </Key>
+    <Key ID="STR_A4ES_Modules_setAnimation_Attributes_loopCondition_Tooltip">
+      <Polish>Arabskie</Polish>
+    </Key>
+    <Key ID="STR_A4ES_Modules_setAnimation_shortDescription">
+      <Polish>Arabskie</Polish>
+    </Key>
+    <Key ID="STR_A4ES_Modules_setAnimation_anims_sit">
+      <Polish>Siedzenie</Polish>
+    </Key>
+    <Key ID="STR_A4ES_Modules_setAnimation_anims_sitArmed">
+      <Polish>Siedzenie (z bronią)</Polish>
+    </Key>
+    <Key ID="STR_A4ES_Modules_setAnimation_anims_lean">
+      <Polish>Opieranie się</Polish>
+    </Key>
+    <Key ID="STR_A4ES_Modules_setAnimation_anims_watch">
+      <Polish>Obserwowanie</Polish>
+    </Key>
+    <Key ID="STR_A4ES_Modules_setAnimation_anims_stand">
+      <Polish>Stanie</Polish>
+    </Key>
+    <Key ID="STR_A4ES_Modules_setAnimation_anims_brief">
+      <Polish>Briefing</Polish>
+    </Key>
+    <Key ID="STR_A4ES_Modules_setAnimation_anims_listen">
+      <Polish>Słuchanie</Polish>
+    </Key>
+    <Key ID="STR_A4ES_Modules_setAnimation_anims_talk">
+      <Polish>Mówienie</Polish>
+    </Key>
+    <Key ID="STR_A4ES_Modules_setAnimation_anims_navigate">
+      <Polish>Wskazywanie drogi</Polish>
+    </Key>
+    <Key ID="STR_A4ES_Modules_setAnimation_anims_wounded">
+      <Polish>Leżenie będąc rannym</Polish>
+    </Key>
+    <Key ID="STR_A4ES_Modules_setAnimation_anims_repair">
+      <Polish>Naprawianie pojazdu kucając</Polish>
+    </Key>
+  </Package>
   <Package name="Preferences">
     <Key ID="STR_A4ES_Modules_Preferences_displayName">
       <Polish>A4ES - Moduły</Polish>

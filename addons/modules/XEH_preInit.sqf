@@ -40,6 +40,18 @@ if (isServer) then {
   _this call FUNC(addAction_moduleExecLocal);
 }] call CBA_fnc_addEventHandler;
 
+[QGVAR(disableAI), {
+    params ["_unit", "_sections"];
+
+    if (_sections isEqualType "") then {
+      _sections = [_sections];
+    };
+
+    {
+      _unit disableAI _x;
+    } forEach _sections;
+}] call CBA_fnc_addEventHandler;
+
 [QGVAR(locationName), {
   _this call FUNC(locationName_moduleExecLocal);
 }] call CBA_fnc_addEventHandler;

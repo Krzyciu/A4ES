@@ -359,6 +359,7 @@ class CfgVehicles {
     #include "modules\playSound\module.hpp"
     // #include "modules\radioJammer\module.hpp"
     #include "modules\registerArtilleryUnits\module.hpp"
+    #include "modules\setAnimation\module.hpp"
     // #include "modules\setDamage\module.hpp"
     // #include "modules\setDraggable\module.hpp"
     #include "modules\setFace\module.hpp"
