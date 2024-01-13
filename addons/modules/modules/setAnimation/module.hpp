@@ -31,7 +31,7 @@ class GVAR(setAnimation): GVAR(base) {
             tooltip = CSTRING(setAnimation_Attributes_predefinedAnim_Tooltip);
             property = QGVAR(predefinedAnim);
             typeName = "STRING";
-            defaultValue = "amovpsitmstpslowwrfldnon";
+            defaultValue = "'amovpsitmstpslowwrfldnon'";
             GVAR(observeValue) = 1;
             GVAR(conditionActive) = QUOTE((_this getVariable QQGVAR(mode)) isEqualTo 0);
             ATTRIBUTE_LOCAL;
@@ -98,7 +98,7 @@ class GVAR(setAnimation): GVAR(base) {
             displayName = "data";
             tooltip = "data";
             property = QGVAR(data);
-            defaultValue = "'[]'";
+            defaultValue = "''";
             ATTRIBUTE_LOCAL;
         };
 

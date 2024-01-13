@@ -12,11 +12,7 @@ if (
   {_mode isEqualTo "registeredToWorld3DEN"}
 ) exitWith {
   _input params ["_logic"];
-  private _unit = (synchronizedObjects _logic) select {_x isKindOf "CAManBase"};
-  private _animType = _logic getVariable [QGVAR(mode), 0];
-  private _anim = [_logic getVariable [QGVAR(predefinedAnim), ""], _logic getVariable [QGVAR(customAnim), ""]] select _animType;
-  systemChat format ["[A4ES] %1", _unit];
-  _unit#0 switchMove _anim;
+  _logic call FUNC(setAnimation_moduleExecEditor);
 };
 
 // Exit if module executed inside editor, not on server or not in init mode
@@ -35,7 +31,8 @@ if (is3DENPreview) then {
   [_logic, true] call EFUNC(debug,updateModuleStatus);
 };
 
-private _unit = (synchronizedObjects _logic) select {_x isKindOf "CAManBase"};
+private _units = (synchronizedObjects _logic) select {(_x isKindOf "CAManBase")};
+
 private _animType = _logic getVariable [QGVAR(mode), 0];
 private _anim = [_logic getVariable [QGVAR(predefinedAnim), ""], _logic getVariable [QGVAR(customAnim), ""]] select _animType;
 private _loopAnimation = _logic getVariable [QGVAR(loopAnimation), false];
@@ -45,7 +42,7 @@ if (_loopAnimation) then {
   _loopCondition = compile (_logic getVariable [QGVAR(loopCondition), "true"]);
 };
 
-[FUNC(setAnimation_moduleExec), [_unit, _anim, _loopAnimation, _loopCondition], 5] call CBA_fnc_waitAndExecute;
+[FUNC(setAnimation_moduleExec), [_units, _anim, _loopAnimation, _loopCondition], 5] call CBA_fnc_waitAndExecute;
 
 // Delete logic
 deleteVehicle _logic;
