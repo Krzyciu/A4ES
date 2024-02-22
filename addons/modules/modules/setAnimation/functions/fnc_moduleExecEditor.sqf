@@ -11,11 +11,22 @@ private _units = (get3DENConnections _logic) select {
 
 private _animType = _logic getVariable [QGVAR(mode), 0];
 private _anim = [_logic getVariable [QGVAR(predefinedAnim), ""], _logic getVariable [QGVAR(customAnim), ""]] select _animType;
-
-if (_anim isEqualTo "") then {
-  _anim = (_logic get3DENAttribute QGVAR(data))#0;
-};
-
 _logic set3DENAttribute [QGVAR(data), _anim];
 
-{_x#1 switchMove _anim} forEach _units;
+private _loopAnimation = _logic getVariable [QGVAR(loopAnimation), false];
+private _animDoneEH = -1;
+
+{ 
+  private _unit = _x#1;
+  _unit enableSimulation true;
+  _unit switchMove _anim;
+
+  _unit setVariable [QGVAR(loopCondition), _loopCondition];
+
+  _animDoneEH = _unit addEventHandler ["AnimDone", {
+    params ["_unit", "_anim"];
+    _unit switchMove _anim;
+  }];
+
+  _unit setVariable [QGVAR(animDoneEH), _animDoneEH];
+} forEach _units;

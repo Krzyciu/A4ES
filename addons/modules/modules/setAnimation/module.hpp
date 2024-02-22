@@ -38,28 +38,32 @@ class GVAR(setAnimation): GVAR(base) {
             class values {
                 class sit {
                     name = CSTRING(setAnimation_anims_sit);
-                    value = "amovpsitmstpslowwrfldnon";
+                    value = "AidlPsitMstpSnonWnonDnon_ground00";
                     default = 1;
                 };
                 class sitArmed {
                     name = CSTRING(setAnimation_anims_sitArmed);
-                    value = "passenger_flatground_3_Idle_Idling";
+                    value = "AmovPsitMstpSrasWrflDnon_WeaponCheck2";
                 };
-                class lean {
-                    name = CSTRING(setAnimation_anims_lean);
-                    value = "Acts_leaning_against_wall";
+                class sitTied {
+                    name = CSTRING(setAnimation_anims_tied);
+                    value = "Acts_AidlPsitMstpSsurWnonDnon01";
+                };
+                class computer {
+                    name = CSTRING(setAnimation_anims_computer);
+                    value = "Acts_Accessing_Computer_Loop";
                 };
                 class watch {
                     name = CSTRING(setAnimation_anims_watch);
-                    value = "inbasemoves_patrolling1";
+                    value = "Acts_GetAttention_Loop";
                 };
                 class stand {
                     name = CSTRING(setAnimation_anims_stand);
-                    value = "HubStanding_idle1";
+                    value = "AidlPercMstpSrasWrflDnon_G01";
                 };
                 class briefing {
                     name = CSTRING(setAnimation_anims_brief);
-                    value = "hubbriefing_loop";
+                    value = "Acts_B_M03_briefing";
                 };
                 class listen {
                     name = CSTRING(setAnimation_anims_listen);
@@ -79,7 +83,7 @@ class GVAR(setAnimation): GVAR(base) {
                 };
                 class repair {
                     name = CSTRING(setAnimation_anims_repair);
-                    value = "inbasemoves_repairvehicleknl";
+                    value = "Acts_carFixingWheel";
                 };
             };
         };

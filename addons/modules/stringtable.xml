@@ -3157,14 +3157,14 @@
     <Key ID="STR_A4ES_Modules_setAnimation_anims_sitArmed">
       <Polish>Siedzenie (z bronią)</Polish>
     </Key>
-    <Key ID="STR_A4ES_Modules_setAnimation_anims_lean">
-      <Polish>Opieranie się</Polish>
+    <Key ID="STR_A4ES_Modules_setAnimation_anims_computer">
+      <Polish>Pisanie na klawiaturze</Polish>
     </Key>
     <Key ID="STR_A4ES_Modules_setAnimation_anims_watch">
       <Polish>Obserwowanie</Polish>
     </Key>
     <Key ID="STR_A4ES_Modules_setAnimation_anims_stand">
-      <Polish>Stanie</Polish>
+      <Polish>Stanie z bronią</Polish>
     </Key>
     <Key ID="STR_A4ES_Modules_setAnimation_anims_brief">
       <Polish>Briefing</Polish>
@@ -3181,8 +3181,11 @@
     <Key ID="STR_A4ES_Modules_setAnimation_anims_wounded">
       <Polish>Leżenie będąc rannym</Polish>
     </Key>
+    <Key ID="STR_A4ES_Modules_setAnimation_anims_tied">
+      <Polish>Siedzenie będąc związanym</Polish>
+    </Key>
     <Key ID="STR_A4ES_Modules_setAnimation_anims_repair">
-      <Polish>Naprawianie pojazdu kucając</Polish>
+      <Polish>Naprawianie klęcząc</Polish>
     </Key>
   </Package>
   <Package name="Preferences">
